@@ -21,6 +21,7 @@
     "@mastra/core": "^0.21.0",
     "@mastra/libsql": "^0.15.2",
     "@mastra/loggers": "^0.10.16",
+    "@mastra/mcp": "^0.13.5",
     "@mastra/memory": "^0.15.7",
     "chrono-node": "^2.9.0",
     "luxon": "^3.7.2",
