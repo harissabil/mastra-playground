@@ -14,6 +14,7 @@ const bedrock = createAmazonBedrock({
     secretAccessKey: process.env.AMAZON_SECRET_ACCESS_KEY,
 });
 
+// @ts-ignore
 const ytComposioTools = await ytComposioMcp.getTools();
 
 const userChannelId = process.env.YOUTUBE_CHANNEL_ID || 'not set';
