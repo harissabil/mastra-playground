@@ -7,10 +7,22 @@ import {financeAgent} from './agents/finance-agent';
 import {generalAgent} from "./agents/general-agent";
 import {gmailCalendarAgent} from "./agents/gmail-calendar-agent";
 import {ytAgent} from "./agents/youtube-agent";
+import {playwrightAgent} from "./agents/playwright-agent";
+import {travelokaFlightAgent} from "./agents/traveloka-playwright-agent";
+import {canvaAgent} from "./agents/canva-agent";
 
 export const mastra = new Mastra({
     workflows: {weatherWorkflow},
-    agents: {weatherAgent, financeAgent, generalAgent, gmailAgent: gmailCalendarAgent, ytAgent},
+    agents: {
+        weatherAgent,
+        financeAgent,
+        generalAgent,
+        gmailAgent: gmailCalendarAgent,
+        ytAgent,
+        playwrightAgent,
+        travelokaFlightAgent,
+        canvaAgent
+    },
     storage: new LibSQLStore({
         // stores observability, scores, ... into memory storage, if it needs to persist, change to file:../mastra.db
         url: ":memory:",
